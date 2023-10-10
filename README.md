@@ -1,6 +1,6 @@
 <b><h1>Full stack Development or Web Development</h1></b><br/>
-<h3>
--Development of Web site and web-application
+<h5>
+<b>Development of Web site and web-application</b>
 
 FRONTEND 
 - HTML  -  Content/Structure
@@ -15,7 +15,7 @@ BACKEND
 
 
 DATABASE
-- MONGODB - NoSQL Database </h3><br/>
+- MONGODB - NoSQL Database </h5><br/>
 <hr/>
 
 
