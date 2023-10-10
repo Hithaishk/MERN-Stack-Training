@@ -1,4 +1,5 @@
-<b>Full stack Development or Web Development</b>
+<b><h1>Full stack Development or Web Development</h1></b><br/>
+<h3>
 -Development of Web site and web-application
 
 FRONTEND 
@@ -14,11 +15,11 @@ BACKEND
 
 
 DATABASE
-- MONGODB - NoSQL Database <br/>
+- MONGODB - NoSQL Database </h3><br/>
 <hr/>
 
 
-DAY 1 <br/>
+<b>DAY 1 </b><br/>
 Task 1
 Complete proffile page(only Html)
 
