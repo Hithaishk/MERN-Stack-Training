@@ -1,23 +1,24 @@
-Full stack Development or Web Development
+<b>Full stack Development or Web Development</b>
 -Development of Web site and web-application
 
-Frontend 
+FRONTEND 
 - HTML  -  Content/Structure
 - CSS   -  Styling
 - JAVASCRIPT - Logic/Functionlity
 - BOOTSTRAP -  CSS Framework
 - REACT  -  JAvasript library
 
-BAckend 
+BACKEND
 -  Node  JS  - Runtime Envirnment of Javascript
 -  EXPRESS JS  - Framework of node Js
 
 
 DATABASE
-- MONGODB - NoSQL Database
+- MONGODB - NoSQL Database <br/>
+<hr/>
 
 
-DAy 1
+DAY 1 <br/>
 Task 1
 Complete proffile page(only Html)
 
