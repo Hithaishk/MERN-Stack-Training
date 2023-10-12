@@ -1,0 +1,28 @@
+img{
+    height:150px ;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    outline-style: dotted;
+    
+}
+#card{
+    border:5px solid rgba(81, 6, 244, 0.06);
+    width:200px;
+    padding:10px;
+    background-color: rgb(11, 237, 52);
+    margin-left: auto;
+    margin-right: auto;
+}
+h3{
+    text-align: center;
+    color: red;
+}
+p{
+    color: blueviolet;
+    text-align: justify;
+}
+body{
+    background-image: url(motu-backgroud.webp);
+    background-size:cover ;
+}
