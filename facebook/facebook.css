@@ -1,24 +1,115 @@
-#card{
-    width: 400px;
-    height: 400px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: auto;
-    margin-bottom: auto;
-    background-color: aliceblue;
+
+
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: 0;
 }
-#h2{
-    text-align: center;
-    color: blue;
-    font-style:oblique;
-    font-size: 32px;
+body{
+    height: 100vh;
+    overflow: hidden;
+    background-color: #f0f2f5;
+    font-family: Arial, Helvetica, sans-serif;
 
 }
-#p{
-    text-align: center;
-    
+.main{
+    width: 400px;
+    height: 680px;
+    margin: auto;
+    margin-top: 40px;
 }
-#text{
-    width: 90%;
-    align-items: center;
+.branding{
+    text-align: center;
+
+}
+.logo{
+    color:#1877f2;
+    font-size: 3.7rem;
+    letter-spacing: -3px;
+}
+.slogan{
+    font-size: 1.5rem;
+    font-weight: lighter;
+    margin: 20px 0;
+}
+.panel{
+    background-color: #fff;
+    width:400px;
+    padding:15px;
+    margin:20px 0;
+    border-radius: 6px;
+    box-shadow: 0 3px 5px 2px rgba(150, 150, 150, 0.5);
+    text-align: center;
+}
+input{
+    width:90%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border:1px solid #d2d2d2;
+    border-radius: 6px;
+}
+input::placeholder{
+    font-size: 1.0rem;
+}
+input:focus{
+    outline:1px solid #1877f2
+}
+input:focus::placeholder{
+    color:#c2c2c2;
+}
+.login{
+    background-color: #1877f2;
+    color:white;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    padding: 10px;
+    transition-property: background-color;
+    transition-duration: 200ms;
+    transition-timing-function: ease-in-out;
+}
+.login:hover{
+    background-color: #1360c4;
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+.forgot{
+    font-size:0.9rem;
+    color:#1877f2;
+}
+hr{
+    margin:18px 0;
+    opacity: 0.3;
+}
+.register{
+    background-color:#42b72a;
+    color: white;
+    display: inline-block;
+    padding:15px;
+    margin: 10 px 0;
+    border-radius: 6px;
+    font-weight: bolder;
+    transition-property: background-color;
+    transition-duration: 100ms;
+    transition-timing-function: ease-in-out;
+}
+.register:hover{
+    text-decoration: none;
+    background-color: rgb(33, 124, 33);
+
+}
+.bottom{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    font-size: 0.9rem;
+}
+.page{
+    color:#000;
+    font-weight: bold;
 }
