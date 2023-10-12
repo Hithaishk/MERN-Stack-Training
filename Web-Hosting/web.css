@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100%;
+    background-color: orange;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.container{
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+    
+.card1{
+    width: 220px;
+    height: 400px;
+    margin:auto;
+    margin-top: 60px;
+    margin-bottom: auto;
+    background-color: white;
+}
+.card2{
+    width: 220px;
+    height: 450px;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: auto;
+    background-color: white;
+}
+.head{
+    text-align: center;
+}
+.heading{
+    color:red;
+    font-size: 1.5rem;
+}
+.RS{
+    display: flex;
+    justify-content: center;
+    color: red;
+}
+.Sym{
+    vertical-align: super;
+    font-size: 1rem;
+}
+.Rs{
+    font-size: 1.7rem;
+}
+.month{
+    vertical-align: sub;
+    font-size: 1rem;
+}
+.button1{
+    justify-content: center;
+    align-items: center;
+}
+.button{
+    background-color: red;
+}
