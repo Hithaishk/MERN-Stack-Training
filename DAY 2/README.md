@@ -13,7 +13,7 @@
 + Class Selectors<br>
 + Id Selectors<br>
 
-<pre>
+<pre font:30px>
 Day 2
     Task 1
     - Design Login page of Instagram
