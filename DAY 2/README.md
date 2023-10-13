@@ -2,16 +2,16 @@
 
 
 <h5>Types of CSS</h5>
-1) Inline Css
-2)Internal Css
-3)External Css
+1) Inline Css<br>
+2)Internal Css<br>
+3)External Css<br>
 
 
 
 <h4>Selectors -</h4>
-Tag Selectors
-Class Selectors
-Id Selectors
++ Tag Selectors<br>
++ Class Selectors<br>
++ Id Selectors<br>
 
 Day 2
 Task 1
