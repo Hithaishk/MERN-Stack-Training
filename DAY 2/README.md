@@ -13,7 +13,7 @@
 + Class Selectors<br>
 + Id Selectors<br>
 
-
+<pre>
 Day 2
     Task 1
     - Design Login page of Instagram
@@ -21,3 +21,4 @@ Day 2
     - Design Home Page of any website using Css
     Task 3
     - Given in group
+    </pre>
