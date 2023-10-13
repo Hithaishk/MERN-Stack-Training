@@ -6,7 +6,7 @@
 2)Internal Css
 3)External Css
 <br>
-<h4>Selectors -</h>
+<h4>Selectors -</h4>
 Tag Selectors
 Class Selectors
 Id Selectors
@@ -17,4 +17,4 @@ Task 1
 Task 2
     Design Home Page of any website using Css
 Task 3
-    Given in group<h6></pre>
+    Given in group</h6></pre>
