@@ -1,13 +1,15 @@
 body{
-    background-color: aqua;
+    background: linear-gradient(45deg,#b2d407,#02aed0,#1daafc,#87fd09,#f21c95,#0831e7d6);
     justify-content: center;
     align-items: center;
     text-align: center;
     font-family:Arial, Helvetica, sans-serif;
+    background-size: 2000px 1000px;
+    background-repeat: no-repeat;
 
 }
 .container{
-   background-color: rgb(237, 150, 43);
+   background:linear-gradient(45deg,#eff0f3,#67f0c2,#d6727e,#c13584,#ec6cec,#b256bc);
    width: 400px;
    height: 250px;
    justify-content: center;

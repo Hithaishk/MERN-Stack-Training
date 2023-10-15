@@ -1,0 +1,54 @@
+#container{
+    width:350px;
+    height:500px;
+    border: 1px solid black;
+    display:block;
+    background-color:white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    border-radius: 6px;
+    justify-content: center;
+    text-align: center;
+}
+
+h3{
+    padding-top: 20px;
+    font-weight: 600;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.5rem;
+}
+.empty{
+    height: 50px;
+}
+
+#n1{
+    width:250px;
+    height:30px;
+    
+    border-radius: 6px;
+}
+
+button{
+    width:100px;
+    height:30px;
+    /* margin-left: auto;
+    margin-right: auto; */
+    border-radius: 6px;
+    background-color: rgb(246, 32, 32);
+}
+button:hover{
+    background-color: blueviolet;
+    
+}
+#output{
+    text-align: center;
+}
+
+#res{
+    margin-left: auto;
+    margin-right:auto;
+    text-align: center;
+    
+}
