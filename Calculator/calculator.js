@@ -5,19 +5,19 @@ function c1(){
     let res;
     if(oper=="+"){
         res=parseFloat(num1)+parseFloat(num2);
-        document.getElementById("output").innerHTML="Your Answer is"+"  "+res;
+        document.getElementById("output").innerHTML="Your Answer is"+"  "+res+"😂";
     }
     if(oper=="-"){
         res=parseFloat(num1)-parseFloat(num2);
-        document.getElementById("output").innerHTML="Your Answer is"+"  "+res;
+        document.getElementById("output").innerHTML="Your Answer is"+"  "+res+"😂";
     }
     if(oper=="*"){
         res=parseFloat(num1)*parseFloat(num2);
-        document.getElementById("output").innerHTML="Your Answer is"+"  "+res;
+        document.getElementById("output").innerHTML="Your Answer is"+"  "+res+"😂";
     }
     if(oper=="/"){
         res=parseFloat(num1)/parseFloat(num2);
-        document.getElementById("output").innerHTML="Your Answer is"+"  "+res;
+        document.getElementById("output").innerHTML="Your Answer is"+"  "+res+"😂";
     }
 
 }
