@@ -1,0 +1,18 @@
+bootstrap - Frontend framework or css framework used for crateing responsive websites and web application 
+
+two ways to add bootstrap
+> CDN links 
+> download
+
+grid system
+1 Breakpoint
+2 container
+3 row 
+4 column = grid
+
+
+inside container we can put row and in row we can devide it into col
+
+bs containers
+bs button
+bs card
