@@ -1,0 +1,510 @@
+
+body,html{
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+.boydiv{
+    position: absolute;
+    margin: 0 0 0 0;
+    padding:0 0 0 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom right, rgb(180, 174, 174),rgb(235, 228, 227));
+}
+.singletitle{
+    position: relative;
+    text-align: center;
+    font-size: 125%;
+    padding-top: 10px;
+    color: rgb(241, 15, 15);
+    font: normal;
+    margin-bottom: 0;
+    font-weight: bolder;
+    
+}
+.single{
+    position: absolute;
+    background-color: white;
+    width: 20%;
+    left:15.5%;
+    top: 15%;
+    height: 70%;
+    box-shadow: 2px 2px 9px rgb(99, 98, 98);
+
+}
+.ideal{
+    text-align: center;
+    margin: 0;
+    font-weight: normal;
+    color: rgb(112, 110, 110);
+    font-size:84%;
+
+}
+.dol{
+ position: absolute;
+ left: 35%;
+ bottom: 70%;
+ color: rgb(241, 47, 47);
+  
+ 
+}
+.number{
+   position: absolute;
+   font-size: 275%;
+   left: 40%;
+   bottom: 62%;
+   color: rgb(241, 47, 47);
+}
+.sbutton{
+    position: absolute;
+    top: 35%;
+    
+    
+    border-width: 0;
+    width: 65%;
+    height: 7%;
+    
+    background-color: rgb(249, 57, 57);
+    border-radius: 15px 15px 15px 15px;
+     left: 15%;
+    color: white;
+    font-size: 100%;
+    
+}
+
+.per{
+    left: 62%;
+    top: 23%;
+    position: absolute;
+    font-weight: normal;
+    color: rgb(241, 47, 47);
+}
+
+.buttonbot{
+    position: absolute;
+    top: 40%;
+    font-size: 100%;
+    font-weight: normal;
+    color: rgb(128, 128, 128);
+    left: 30%;
+}
+.web{
+    position: absolute;
+    font-weight: 300;
+    top: 53%;
+    
+    font-size: 105%;
+    font-style: normal;
+    color: rgb(106, 106, 106);
+    left: 9%;
+}
+
+.visit{
+    position: absolute;
+    font-weight: 300;
+    top: 60%;
+    
+    font-size: 105%;
+    font-style: normal;
+    color: rgb(106, 106, 106);
+    left: 9%;
+}
+
+.gb{
+    position: absolute;
+    font-weight: 300;
+    top: 67%;
+
+    font-size: 105%;
+    font-style: normal;
+    color: rgb(106, 106, 106);
+    left: 9%;
+}
+.hgb{
+    position: absolute;
+    font-weight: 300;
+    top: 74%;
+    
+    font-size: 105%;
+    font-style: normal;
+    color: rgb(106, 106, 106);
+    left: 9%;
+}
+
+.features{
+    position: absolute;
+    top: 83%;
+    font-size: 165%;
+    left: 20%;
+}
+
+
+
+
+
+
+.webhosting{
+    position: relative;
+    text-align: center;
+    font-size: 125%;
+    padding-top: 10px;
+    color: goldenrod;
+    font: normal;
+    margin-bottom: 0;
+    font-weight: bolder;
+    
+}
+.ultimate{
+    position: absolute;
+    background-color: white;
+    width: 20%;
+    right:15.5%;
+    top: 15%;
+    height: 70%;
+    box-shadow: 2px 2px 9px rgb(99, 98, 98);
+
+}
+.perk{
+    text-align: center;
+    margin: 0;
+    font-weight: normal;
+    color: rgb(112, 110, 110);
+    font-size:84%;
+
+}
+.dola{
+ position: absolute;
+ left: 35%;
+ bottom: 70%;
+ color: goldenrod
+  
+ 
+}
+.number2{
+   position: absolute;
+   font-size: 275%;
+   left: 40%;
+   bottom: 62%;
+   color: goldenrod
+}
+.sbutton2{
+    position: absolute;
+    top: 35%;
+    
+    
+    border-width: 0;
+    width: 65%;
+    height: 7%;
+    
+    background-color:goldenrod;
+    border-radius: 15px 15px 15px 15px;
+     left: 15%;
+    color: white;
+    font-size: 100%;
+    
+}
+
+.per2{
+    left: 69%;
+    top: 23%;
+    position: absolute;
+    font-weight: normal;
+    color: goldenrod
+}
+
+.buttonbot2{
+    position: absolute;
+    top: 40%;
+    font-size: 100%;
+    font-weight: normal;
+    color: rgb(128, 128, 128);
+    left: 30%;
+}
+.web2{
+    position: absolute;
+    font-weight: 300;
+    top: 53%;
+    
+    font-size: 105%;
+    font-style: normal;
+    color: rgb(106, 106, 106);
+    left: 9%;
+}
+
+.visit2{
+    position: absolute;
+    font-weight: 300;
+    top: 60%;
+    
+    font-size: 105%;
+    font-style: normal;
+    color: rgb(106, 106, 106);
+    left: 9%;
+}
+
+.gb2{
+    position: absolute;
+    font-weight: 300;
+    top: 67%;
+
+    font-size: 105%;
+    font-style: normal;
+    color: rgb(106, 106, 106);
+    left: 9%;
+}
+.hgb2{
+    position: absolute;
+    font-weight: 300;
+    top: 74%;
+    
+    font-size: 105%;
+    font-style: normal;
+    color: rgb(106, 106, 106);
+    left: 9%;
+}
+
+.features{
+    position: absolute;
+    top: 83%;
+    font-size: 165%;
+    left: 20%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.webhosting3{
+    position: relative;
+    text-align: center;
+    font-size: 125%;
+    padding-top: 10px;
+    color: darkorchid;
+    font: normal;
+    margin-bottom: 0;
+    font-weight: bolder;
+    
+}
+.ultimate3{
+    position: absolute;
+    background-color: white;
+    width: 22%;
+    right:39%;
+    top: 10%;
+    height: 80%;
+    box-shadow: 2px 2px 11px rgb(99, 98, 98);
+
+}
+.perk3{
+    text-align: center;
+    margin: 0;
+    font-weight: normal;
+    color: rgb(112, 110, 110);
+    font-size:84%;
+
+}
+.dola3{
+ position: absolute;
+ left: 35%;
+ bottom: 70%;
+ color: darkorchid;
+  
+ 
+}
+.number3{
+   position: absolute;
+   font-size: 275%;
+   left: 40%;
+   bottom: 62%;
+   color: darkorchid;
+}
+.sbutton3{
+    position: absolute;
+    top: 35%;
+    
+    
+    border-width: 0;
+    width: 65%;
+    height: 7%;
+    
+    background-color:darkorchid;
+    border-radius: 15px 15px 15px 15px;
+     left: 15%;
+    color: white;
+    font-size: 100%;
+    
+}
+
+.per3{
+    left: 67%;
+    top: 24.5%;
+    position: absolute;
+    font-weight: normal;
+    color: darkorchid;
+}
+
+.buttonbot3{
+    position: absolute;
+    top: 40%;
+    font-size: 100%;
+    font-weight: normal;
+    color: rgb(128, 128, 128);
+    left: 30%;
+}
+.web3{
+    position: absolute;
+    font-weight: 300;
+    top: 53%;
+    
+    font-size: 105%;
+    font-style: normal;
+    color: rgb(106, 106, 106);
+    left: 9%;
+}
+
+.visit3{
+    position: absolute;
+    font-weight: 300;
+    top: 60%;
+    
+    font-size: 105%;
+    font-style: normal;
+    color: rgb(106, 106, 106);
+    left: 9%;
+}
+
+.gb3{
+    position: absolute;
+    font-weight: 300;
+    top: 67%;
+
+    font-size: 105%;
+    font-style: normal;
+    color: rgb(106, 106, 106);
+    left: 9%;
+}
+.hgb3{
+    position: absolute;
+    font-weight: 300;
+    top: 74%;
+    
+    font-size: 105%;
+    font-style: normal;
+    color: rgb(106, 106, 106);
+    left: 9%;
+}
+
+.features{
+    position: absolute;
+    top: 83%;
+    font-size: 165%;
+    left: 20%;
+}
+
+
+
+
+.right1{
+    position: absolute;
+    width: 5%;
+    top: 56.5%;
+    left: 85%;
+
+}
+
+.right2{
+    position: absolute;
+    width: 5%;
+    top: 63.5%;
+    left: 85%;
+
+}
+
+.wrong1{
+    position: absolute;
+    width: 5.5%;
+    top: 71%;
+    left: 85%;
+}
+.wrong2{
+    position: absolute;
+    width: 5.5%;
+    top: 78%;
+    left: 85%;
+}
+
+.right3{
+    position: absolute;
+    width: 5%;
+    top: 56.5%;
+    left: 85%;
+
+}
+
+.right4{
+    position: absolute;
+    width: 5%;
+    top: 63.5%;
+    left: 85%;
+
+}
+
+.right5{
+    position: absolute;
+    width: 5%;
+    top: 70.5%;
+    left: 85%;
+}
+
+.right6{
+    position: absolute;
+    width: 5%;
+    top: 77.5%;
+    left: 85%;
+}
+
+
+.right7{
+    position: absolute;
+    width: 5%;
+    top: 56.5%;
+    left: 85%;
+
+}
+
+.right8{
+    position: absolute;
+    width: 5%;
+    top: 63.5%;
+    left: 85%;
+
+}
+
+.right9{
+    position: absolute;
+    width: 5%;
+    top: 70.5%;
+    left: 85%;
+}
+
+.wrong3{
+    position: absolute;
+    width: 5.5%;
+    top: 77%;
+    left: 85%;
+}
+.bestval{
+    position: absolute;
+    bottom: 78.5%;
+    right: 57%;
+    width: 50%;
+}
