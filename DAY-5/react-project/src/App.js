@@ -22,8 +22,10 @@ import About from "./Pages/About";
 import Contact from "./Pages/Contact";
 import Navbar from "./Components/Navbar";
 import Login from "./Pages/Login"
+// import Signup from "./Pages/Signup";
 
 import{BrowserRouter,Routes,Route} from "react-router-dom";
+import Signup from "./Pages/Signup";
 
 function App(){
   return(
@@ -35,8 +37,7 @@ function App(){
           <Route element={<Contact/>} path="/contact" />
           <Route element={<About/>} path="/about" />
           <Route element={<Login/>} path="/login" />
-
-
+          <Route element={<Signup/>} path="/signup" />
         </Routes> 
           </BrowserRouter>
     </>
