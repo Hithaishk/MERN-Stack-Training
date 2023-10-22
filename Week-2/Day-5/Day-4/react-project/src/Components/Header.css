@@ -1,0 +1,14 @@
+#box{
+    border: 5px solid green;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding:10px;
+    background-color: aqua;
+}
+
+#imgg{
+    margin-left: auto;
+    margin-right: auto;
+}
