@@ -7,7 +7,7 @@ const Navbar=()=>{
             <nav className="navbar navbar-expand-lg bg-dark navbar-dark">
                 <div className="container-fluid">
                     <Link className="navbar-brand" to="/">
-                        Navbar
+                        Explore.in/Gokarna
                     </Link>
                     <div className="Collapse navbar-collapse">
                         <ul className="navbar-nav me-auto">
@@ -26,6 +26,13 @@ const Navbar=()=>{
                                     About
                                 </Link>
                             </li>
+                            <li>
+                                <form className="d-flex ">
+                                    <input className="form-control ms-5 me-3 " type="search" placeholder="Search" aria-label="Search"/>
+                                    <button className="btn btn-outline-success" type="submit">Search</button>
+                                </form>
+                            </li>
+                            
                         </ul>
                         <Link className="btn btn-primary mx-1" to="/login">
                             Login
