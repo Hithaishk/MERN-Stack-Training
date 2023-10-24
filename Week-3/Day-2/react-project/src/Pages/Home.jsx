@@ -16,7 +16,7 @@ function Home(){
                 <div className="carousel-caption d-none d-md-block pb-3">
                     <h5>EXPLORE PLACE</h5>
                     <p>Discover the places to visit in and around the area.</p>
-                    <Link to="places.html"><button type="button" className="btn btn-dark">More</button></Link>
+                    <Link to="./Places"><button type="button" className="btn btn-dark">More</button></Link>
                   </div>
               </div>
               
@@ -25,7 +25,7 @@ function Home(){
                 <div className="carousel-caption d-none d-md-block pb-3">
                     <h5>BOOK YOUR STAY</h5>
                     <p>Discover the perfect accommodation in the coastal paradise of Gokarna. Whether you prefer the comfort of a cozy room or the adventure of a beachfront tent, we have you covered.</p>
-                    <Link to="soon.html"><button type="button" className="btn btn-dark">More</button></Link>
+                    <Link to="./Places"><button type="button" className="btn btn-dark">More</button></Link>
                     
                   </div>
                 
@@ -35,7 +35,7 @@ function Home(){
                 <div className="carousel-caption d-none d-md-block pb-3">
                     <h5>RENT A BIKE</h5>
                     <p>Renting a bike is one of the cheapest and best ways to explore Gokarna.</p>
-                    <Link to="soon.html"><button type="button" className="btn btn-dark">More</button></Link>
+                    <Link to="./Places"><button type="button" className="btn btn-dark">More</button></Link>
                     
                   </div>
                 
@@ -59,7 +59,7 @@ function Home(){
                 <div className="card-div">
                   <h5 className="card-title text-light">ABOUT US</h5>
                   <p className="card-text text-light">Welcome to Explore Gokarna, your ultimate guide to uncovering the hidden gems of this beautiful coastal town. We are here to make your journey through Gokarna a memorable and hassle-free experience.</p>
-                  <Link to="about.html" className="card-link"><button type="button" className="btn btn-secondary">MORE</button></Link>
+                  <Link to="./about" className="card-link"><button type="button" className="btn btn-secondary">MORE</button></Link>
                 </div>
               </div>
             </div>
@@ -68,7 +68,7 @@ function Home(){
                 <div className="card-div">
                   <h5 className="card-title text-light">OUR PACKAGES</h5>
                   <p className="card-text text-light">Simplify your travel plans with our all-in-one package. One simple card, endless possibilities. Explore Gokarna your way.</p>
-                  <Link to="packages.html" className="card-link"><button type="button" className="btn btn-secondary">MORE</button></Link>
+                  <Link to="./Package" className="card-link"><button type="button" className="btn btn-secondary">MORE</button></Link>
                 </div>
               </div>
             </div>
