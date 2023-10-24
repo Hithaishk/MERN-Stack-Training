@@ -21,19 +21,19 @@ const Navbar = () => {
 
     return (
         <>
-           <nav className="navbar navbar-expand-lg bg-dark navbar-dark">
+           <nav className="navbar navbar-expand-lg  bg-dark navbar-dark">
                 <div className="container-fluid">
                     <Link className="navbar-brand" to="/">
                         Explore.in/Gokarna
                     </Link>
-                    <button
+                    {/* <button
                         className="navbar-toggler"
                         type="button"
                         data-bs-toggle="collapse"
                         data-bs-target="#navbar-nav"
                     >
                         <span className="navbar-toggler-icon"></span>
-                    </button>
+                    </button> */}
                     <div className="collapse navbar-collapse">
                         <ul className="navbar-nav me-auto ">
                             <li className="nav-item">
