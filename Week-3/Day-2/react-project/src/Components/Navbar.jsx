@@ -22,39 +22,31 @@ const Navbar = () => {
     return (
         <>
            <nav className="navbar navbar-expand-lg bg-dark navbar-dark">
-                <div className="container-fluid">
-                    <Link className="navbar-brand" to="/">
-                        Explore.in/Gokarna
-                    </Link>
-                    <button
-                        className="navbar-toggler"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#navbar-nav"
-                    >
-                        <span className="navbar-toggler-icon"></span>
-                    </button>
-                    <div className="collapse navbar-collapse">
-                        <ul className="navbar-nav me-auto ">
-                            <li className="nav-item">
-                                <Link className="nav-link" to="/">
+                            <div className="container-fluid">
+                            <Link className="navbar-brand" to="/">
+                                Explore.in/Gokarna
+                            </Link>
+                            <div className="collapse navbar-collapse">
+                                <ul className="navbar-nav me-auto">
+                                <li className="nav-item">
+                                    <Link className="nav-link" to="/">
                                     Home
-                                </Link>
-                            </li>
-                            <li className="nav-item">
-                                <Link className="nav-link" to="/contact">
+                                    </Link>
+                                </li>
+                                <li className="nav-item">
+                                    <Link className="nav-link" to="/contact">
                                     Contact
-                                </Link>
-                            </li>
-                            <li className="nav-item">
-                                <Link className="nav-link" to="/about">
+                                    </Link>
+                                </li>
+                                <li className="nav-item">
+                                    <Link className="nav-link" to="/about">
                                     About
-                                </Link>
-                            </li>
-                            <li>
+                                    </Link>
+                                </li>
+                                </ul>
                                 <form className="d-flex">
                                     <input
-                                        className="form-control ms-5 me-3"
+                                        className="form-control ms-3 me-2"
                                         type="search"
                                         placeholder="Search"
                                         aria-label="Search"
@@ -69,8 +61,6 @@ const Navbar = () => {
                                         Search
                                     </button>
                                 </form>
-                            </li>
-                        </ul>
                         <Link className="btn btn-primary mx-1" to="/login">
                             Login
                         </Link>

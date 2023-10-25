@@ -1,6 +1,6 @@
 
 export const searchData = [
-    { keyword: 'gokarna', route: '/gokarna' },
+    { keyword: 'gokarna', route: './Places' },
     
 ];
 
