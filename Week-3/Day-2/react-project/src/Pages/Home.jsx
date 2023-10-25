@@ -25,7 +25,7 @@ function Home(){
                 <div className="carousel-caption d-none d-md-block pb-3">
                     <h5>BOOK YOUR STAY</h5>
                     <p>Discover the perfect accommodation in the coastal paradise of Gokarna. Whether you prefer the comfort of a cozy room or the adventure of a beachfront tent, we have you covered.</p>
-                    <Link to="./Places"><button type="button" className="btn btn-dark">More</button></Link>
+                    <Link to="/soon"><button type="button" className="btn btn-dark">More</button></Link>
                     
                   </div>
                 
@@ -35,7 +35,7 @@ function Home(){
                 <div className="carousel-caption d-none d-md-block pb-3">
                     <h5>RENT A BIKE</h5>
                     <p>Renting a bike is one of the cheapest and best ways to explore Gokarna.</p>
-                    <Link to="./Places"><button type="button" className="btn btn-dark">More</button></Link>
+                    <Link to="/soon"><button type="button" className="btn btn-dark">More</button></Link>
                     
                   </div>
                 
@@ -50,8 +50,6 @@ function Home(){
               <span className="visually-hidden">Next</span>
             </button>
           </div>
-
-
           <div className="container text-center mt-5 mb-5">
           <div className="row">
             <div className="col-md-6 d-flex">

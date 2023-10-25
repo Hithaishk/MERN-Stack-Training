@@ -20,15 +20,15 @@ function Contact(){
                                     <hr/>
                                     <div className="form-group">
                                         <label htmlFor="">Full Name</label>
-                                        <input type='text' className='form-control' placeholder='Entter full Name'/>                                    
+                                        <input type='text' className='form-control' placeholder='Enter full Name'/>                                    
                                     </div>
                                     <div className="form-group">
                                         <label htmlFor="">Phone number</label>
-                                        <input type='text' className='form-control' placeholder='Entter full Name'/>                                    
+                                        <input type='text' className='form-control' placeholder='Enter Phone number'/>                                    
                                     </div>
                                     <div className="form-group">
                                         <label htmlFor="">Email address</label>
-                                        <input type='text' className='form-control' placeholder='Entter full Name'/>                                    
+                                        <input type='text' className='form-control' placeholder='Enter Email'/>                                    
                                     </div>
                                     <div className="form-group">
                                         <label htmlFor="">Message</label>
