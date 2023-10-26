@@ -12,7 +12,7 @@ const app=express()
 //DB Connection
 
 mongoose.connect(
-    "mongodb+srv://hithaish:Hithaish%40123@cluster0.larynjs.mongodb.net/"
+    "mongodb+srv://hithaish:%40123@cluster0.larynjs.mongodb.net/"
 ).then(()=>{
     console.log("Database is connected successfully😎")
 })
@@ -21,7 +21,7 @@ mongoose.connect(
 })
 
 // mongoose.connect(
-//     "mongodb+srv://hithaish:Hithaish@123@cluster0.larynjs.mongodb.net/"
+//     "mongodb+srv://hithaish@123@cluster0.larynjs.mongodb.net/"
 // ).then(()=>{
 //     console.log("Database is connected")
 // })
