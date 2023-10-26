@@ -2,14 +2,10 @@ Node Js is a Runtime Encironment of Javascript which exeecutes Javascript code o
 
 npm init -to install the node.js initialization
 
+node index.js -to get output in terminal
 
-node index.js  -to get output in terminal
+npm i express -to install express
 
-npm i express    -to install express
-
-http://localhost:5000/test   -type in the broweser to hit the page
+http://localhost:5000/test -type in the broweser to hit the page
 
 mongoDB
-mongodb+srv://hithaish:Hithaish@123@cluster0.larynjs.mongodb.net/
-Hithaish@123
-hithaish
