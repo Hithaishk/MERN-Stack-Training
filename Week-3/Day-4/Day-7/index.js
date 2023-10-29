@@ -1,18 +1,18 @@
-// // console.log("Hello everyone")
-
-// const express = require("express"); //  used to import the packkage require=import
-// const mongoose = require("mongoose");
-// const app = express();
-
-
+//index.js
 const express=require("express");
 const mongoose=require("mongoose")
-const app=express()
+
+const routes=require("./Routes/route")
+
+const app=express();
+
+app.use(express.json())
+app.use("/",routes)
+
 
 //DB Connection
-
 mongoose.connect(
-    "mongodb+srv://hithaish:Hithaish%40123@cluster0.larynjs.mongodb.net/"
+    "mongodb+srv://hithaish:cluster0.larynjs.mongodb.net/"
 ).then(()=>{
     console.log("Database is connected successfully😎")
 })
@@ -20,14 +20,7 @@ mongoose.connect(
     console.log(err,"something went wrong")
 })
 
-// mongoose.connect(
-//     "mongodb+srv://hithaish:Hithaish@123@cluster0.larynjs.mongodb.net/"
-// ).then(()=>{
-//     console.log("Database is connected")
-// })
-// .catch((err)=>{
-//     console.log(err,"Error Not connecting")
-// })
+
 
 
 //test API
