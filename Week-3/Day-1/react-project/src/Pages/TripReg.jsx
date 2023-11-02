@@ -27,28 +27,46 @@ function TripReg() {
     fetchRegistrations();
   }, []);
 
-  const fetchRegistrations = async () => {
+
+const fetchRegistrations = async () => {
+  const userEmail = document.cookie
+    .split('; ')
+    .find(row => row.startsWith('user='))
+    ?.split('=')[1];
+
+  if (userEmail) {
     try {
       const response = await axios.get(`${API_URL}/registrations`);
       setRegistrations(response.data);
-      setNumberOfPeople(response.data.length); // Update the number of people
+      setNumberOfPeople(response.data.length);
     } catch (error) {
       console.error("Error fetching registrations:", error);
     }
-  };
-  // useEffect(() => {
-  //   fetchRegistrations();
-  // }, [fetchRegistrations]);
+  } else {
+    // User is not authenticated, display an alert
+    alert("Please log in to fetch registrations.");
+  }
+};
+
+ 
   
 
   const handleAddPerson = async () => {
+    const userEmail = document.cookie
+    .split('; ')
+    .find(row => row.startsWith('user='))
+    ?.split('=')[1];
+
+  if (userEmail) {
     if (name.trim() === "" || age.trim() === "") {
       alert("Name and Age are required.");
     } else {
-      const newPerson = { name, age, gender };
+      
+      const newPerson = { selectedDate, name, age, gender, selectedPackage, user: userEmail };
+  
       try {
-        await axios.post(`${API_URL}/registerPerson`, newPerson);
-        alert("Person added successfully");
+        await axios.post(`${API_URL}/register`, newPerson);
+        alert("Person added successfully"); 
         setName("");
         setAge("");
         setGender("male");
@@ -56,15 +74,20 @@ function TripReg() {
       } catch (error) {
         console.error("Error adding person:", error);
       }
-    }
+    
+  }
+}else {
+  // User is not authenticated, display an alert
+  alert("Please log in .");
+}
+  
   };
-
+  
   const handleCheckPrice = () => {
     const price = packagePrices[selectedPackage];
     const totalPrice = price * numberOfPeople; // Calculate the total price based on the number of people
     setTotalPricePerCharge(totalPrice);
   };
-
 
   const handleEditRegistration = (registration) => {
     setSelectedDate(registration.selectedDate);

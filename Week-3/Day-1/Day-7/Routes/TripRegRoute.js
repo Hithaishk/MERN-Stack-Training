@@ -1,14 +1,23 @@
+//TripRegRoute.js
 const express = require("express");
 const TripRegistration = require("../model/TripReg");
-
 const router = express.Router();
 
+
+
+// Create a new registration
 // Create a new registration
 router.post("/register", async (req, res) => {
   try {
-    const { selectedDate, name, age, gender, selectedPackage } = req.body;
+    const { selectedDate, name, age, gender, selectedPackage, user } = req.body; // Include the "user" field
 
-    const tripRegistration = new TripRegistration({
+    // Ensure that the user is authenticated
+    if (!user) {
+      return res.status(401).json({ error: "User not authenticated" });
+    }
+
+    const newPerson = new TripRegistration({
+      user,
       selectedDate,
       name,
       age,
@@ -16,57 +25,34 @@ router.post("/register", async (req, res) => {
       selectedPackage,
     });
 
-    const registration = await tripRegistration.save();
-    res.status(201).json(registration);
+    const person = await newPerson.save();
+    res.status(201).json(person);
   } catch (err) {
     res.status(500).send("Error registering the trip.");
   }
 });
-// In your backend route file (TripRegRoute.js)
-router.post("/registerPerson", async (req, res) => {
-  try {
-    const { name, age, gender } = req.body;
 
-    // Create a new person entry and save it to the database
-    const newPerson = new TripRegistration({
-      name,
-      age,
-      gender,
-    });
 
-    const person = await newPerson.save();
-    res.status(201).json(person);
-  } catch (err) {
-    res.status(500).send("Error adding a person.");
-  }
-});
 
+
+// Retrieve a single registration by ID
 // Retrieve all registrations
 router.get("/registrations", async (req, res) => {
+  const user = req.headers['user-email']; // Get user email from headers
+
   try {
-    const registrations = await TripRegistration.find().exec();
+    if (!user) {
+      return res.status(401).json({ error: "User not authenticated" });
+    }
+
+    // Retrieve only the registrations associated with the authenticated user
+    const registrations = await TripRegistration.find({ user }).exec();
     res.json(registrations);
   } catch (err) {
     res.status(500).send("Error retrieving registrations.");
   }
 });
 
-// Retrieve a single registration by ID
-router.get("/registrations/:id", async (req, res) => {
-  const registrationId = req.params.id;
-  try {
-    const registration = await TripRegistration.findById(registrationId).exec();
-    if (!registration) {
-      res.status(404).send("Registration not found.");
-    } else {
-      res.json(registration);
-    }
-  } catch (err) {
-    res.status(500).send("Error retrieving the registration.");
-  }
-});
-
-// Update a registration by ID
 // Update a registration by ID
 router.put("/registrations/:id", async (req, res) => {
   const registrationId = req.params.id;

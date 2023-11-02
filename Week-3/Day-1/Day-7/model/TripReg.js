@@ -1,6 +1,10 @@
+//TripReg.js
 const mongoose = require("mongoose");
 
+
+
 const tripRegistrationSchema = new mongoose.Schema({
+  user: String, // Add a 'user' field to associate the registration with a user
   selectedDate: Date,
   name: String,
   age: Number,
@@ -8,9 +12,6 @@ const tripRegistrationSchema = new mongoose.Schema({
   selectedPackage: String,
 });
 
-const TripRegistration = mongoose.model(
-  "TripRegistration",
-  tripRegistrationSchema
-);
+const TripRegistration = mongoose.model("TripRegistration", tripRegistrationSchema);
 
 module.exports = TripRegistration;

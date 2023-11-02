@@ -8,10 +8,16 @@ const Navbar = () => {
   const [searchKeyword, setSearchKeyword] = useState("");
   const navigate = useNavigate();
   const isLoggedIn = sessionStorage.getItem("isLoggedIn") === "true";
+  
+  function clearCookie(cookieName) {
+    document.cookie = `${cookieName}=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;`;
+  }
+  
 
   const handleLogout = () => {
     // Clear the authentication status and update the UI
     sessionStorage.setItem("isLoggedIn", "false");
+    clearCookie("user");
     navigate("/");
   };
   const handleSearchClick = () => {

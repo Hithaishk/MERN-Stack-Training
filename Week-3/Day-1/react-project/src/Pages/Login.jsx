@@ -67,6 +67,9 @@ function Login() {
         setErrors({});
 
         sessionStorage.setItem("isLoggedIn", "true"); // Set user as logged in
+        localStorage.setItem("token", data.token);
+
+
         navigate("/");
       } else if (response.status === 401) {
         setErrors({ email: "Invalid email or password" });
