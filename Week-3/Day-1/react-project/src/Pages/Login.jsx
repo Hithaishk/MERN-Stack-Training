@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link,useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "./Login.css";
 
 function Login() {
@@ -65,10 +65,9 @@ function Login() {
       if (response.status === 200) {
         setMessage(data.message);
         setErrors({});
-        
+
         sessionStorage.setItem("isLoggedIn", "true"); // Set user as logged in
         navigate("/");
-        
       } else if (response.status === 401) {
         setErrors({ email: "Invalid email or password" });
       } else {

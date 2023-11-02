@@ -1,8 +1,23 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+// import Login from "./Login";
 function Package() {
+  const navigate = useNavigate();
+  const handleBookNowClick = () => {
+    const isLoggedIn = sessionStorage.getItem("isLoggedIn") === "true";
+    console.log("isLoggedIn:", isLoggedIn);
+
+    if (isLoggedIn) {
+      console.log("Navigating to /Form");
+      navigate("/Form");
+    } else {
+      console.log("Navigating to /login");
+      navigate("./login");
+    }
+  };
+
   return (
     <>
       <div>
@@ -41,7 +56,10 @@ function Package() {
                   </li>
                 </ul>
                 <div className="card-body text-center">
-                  <Link className="btn btn-warning" to="/Form">
+                  <Link
+                    className="btn btn-warning"
+                    onClick={handleBookNowClick}
+                  >
                     Book Now
                   </Link>
                   <p className="text-white">Limited Time Offer</p>
@@ -81,7 +99,10 @@ function Package() {
                   </li>
                 </ul>
                 <div className="card-body text-center">
-                  <Link className="btn btn-success" to="./form">
+                  <Link
+                    className="btn btn-success"
+                    onClick={handleBookNowClick}
+                  >
                     Book Now
                   </Link>
                   <p className="text-white">Luxury Redefined</p>
@@ -123,7 +144,9 @@ function Package() {
                   </li>
                 </ul>
                 <div className="card-body text-center">
-                <Link className="btn btn-success" to="./form" >Book Now</Link>
+                  <Link className="btn btn-success" to="/Form">
+                    Book Now
+                  </Link>
                   <p className="text-white">Your Dream Trip Awaits</p>
                 </div>
               </div>

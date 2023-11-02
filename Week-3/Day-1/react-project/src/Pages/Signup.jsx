@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Login.css";
@@ -60,16 +59,13 @@ function Signup() {
       });
 
       const data = await response.json();
-      if (response.status ===400) {
+      if (response.status === 400) {
         setMessage(data.message);
         setErrors({});
-      }
-     else  if (response.status === 409) {
+      } else if (response.status === 409) {
         setMessage();
-        setErrors({email:"Email already exists"});
-      }
-
-      else if (response.status === 201) {
+        setErrors({ email: "Email already exists" });
+      } else if (response.status === 201) {
         setMessage(data.message);
         setErrors({});
       } else {

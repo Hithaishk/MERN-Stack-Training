@@ -8,7 +8,7 @@ import Places from "./Pages/Places";
 import Signup from "./Pages/Signup";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Package from "./Pages/Package";
-import Form from "./Pages/FormReg.jsx";
+import TripReg from "./Pages/TripReg.jsx";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
@@ -25,7 +25,7 @@ function App() {
           <Route element={<Signup />} path="/signup" />
           <Route element={<Places />} path="/Places" />
           <Route element={<Package />} path="/Package" />
-          <Route element={<Form />} path="/Form" />
+          <Route element={<TripReg />} path="/Form" />
         </Routes>
       </BrowserRouter>
     </>

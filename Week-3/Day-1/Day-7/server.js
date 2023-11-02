@@ -1,24 +1,31 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
-// const cors = require('cors');
-// app.use(cors());
+const cors = require("cors");
 
 const app = express();
 
+app.use(cors());
 // Connect to MongoDB
-mongoose.connect(
-  "mongodb+srv://hithaish:%40123@cluster0.larynjs.mongodb.net/new",
-  {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  }
-);
+mongoose
+  .connect(
+    "mongodb+srv://cluster0.larynjs.mongodb.net/",
+    {
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+    }
+  )
+  .then(() => {
+    console.log("Database is connected successfully😎");
+  })
+  .catch((err) => {
+    console.log(err, "something went wrong");
+  });
 
 // Create a user schema and model
 const UserSchema = new mongoose.Schema({
   name: String,
-  email: String,
+  email: { type: String, index: true },
   password: String,
 });
 
@@ -70,11 +77,6 @@ app.post("/api/signup", async (req, res) => {
 });
 
 // ... (other routes and server code)
-
-
-
-
-
 // Route to handle user login
 app.post("/api/login", async (req, res) => {
   const { email, password } = req.body;
@@ -93,6 +95,8 @@ app.post("/api/login", async (req, res) => {
 
   return res.status(200).json({ message: "Login successful" });
 });
+const tripRegistrationRoutes = require("./Routes/TripRegRoute");
+app.use("/api", tripRegistrationRoutes);
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
