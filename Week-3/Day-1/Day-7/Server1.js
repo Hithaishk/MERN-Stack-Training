@@ -13,7 +13,7 @@ app.use(cors());
 // Connect to MongoDB
 mongoose
   .connect(
-    "mongodb+srv:",
+    "mongodb+srv://hithaish:Hithaish%40123@cluster0.larynjs.mongodb.net/",
     {
       useNewUrlParser: true,
       useUnifiedTopology: true,

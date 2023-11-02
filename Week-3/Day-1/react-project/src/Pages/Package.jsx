@@ -1,7 +1,7 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 // import Login from "./Login";
 function Package() {
   const navigate = useNavigate();
@@ -14,7 +14,7 @@ function Package() {
       navigate("/Form");
     } else {
       console.log("Navigating to /login");
-      navigate("./login");
+      navigate("/login");
     }
   };
 
@@ -56,12 +56,12 @@ function Package() {
                   </li>
                 </ul>
                 <div className="card-body text-center">
-                  <Link
+                  <button
                     className="btn btn-warning"
                     onClick={handleBookNowClick}
                   >
                     Book Now
-                  </Link>
+                  </button>
                   <p className="text-white">Limited Time Offer</p>
                 </div>
               </div>
@@ -99,12 +99,12 @@ function Package() {
                   </li>
                 </ul>
                 <div className="card-body text-center">
-                  <Link
+                  <button
                     className="btn btn-success"
                     onClick={handleBookNowClick}
                   >
                     Book Now
-                  </Link>
+                  </button>
                   <p className="text-white">Luxury Redefined</p>
                 </div>
               </div>
@@ -144,9 +144,12 @@ function Package() {
                   </li>
                 </ul>
                 <div className="card-body text-center">
-                  <Link className="btn btn-success" to="/Form">
+                <button
+                    className="btn btn-danger"
+                    onClick={handleBookNowClick}
+                  >
                     Book Now
-                  </Link>
+                  </button>
                   <p className="text-white">Your Dream Trip Awaits</p>
                 </div>
               </div>

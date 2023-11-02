@@ -28,6 +28,7 @@ function TripReg() {
   }, []);
 
 
+
 const fetchRegistrations = async () => {
   const userEmail = document.cookie
     .split('; ')
@@ -36,7 +37,9 @@ const fetchRegistrations = async () => {
 
   if (userEmail) {
     try {
-      const response = await axios.get(`${API_URL}/registrations`);
+      const response = await axios.get(`${API_URL}/registrations`, {
+        headers: { 'user-email': userEmail },
+      });
       setRegistrations(response.data);
       setNumberOfPeople(response.data.length);
     } catch (error) {
@@ -47,6 +50,7 @@ const fetchRegistrations = async () => {
     alert("Please log in to fetch registrations.");
   }
 };
+
 
  
   
